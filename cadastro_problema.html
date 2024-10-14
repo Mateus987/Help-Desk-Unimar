@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Chamado</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="/help_desk/index.html">início</a></li>
+            <li><a href="cadastro_problema.html">Chamado</a></li>
+            <li><a href="/help_desk/consulta_tecnica.php">Consulta Técnica</a></li>
+            <li><a href="/help_desk/consulta_ra.html">Consulta por RA</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="container">
+        <br>
+        <h2 class="text-center">Cadastro de Chamado</h2>
+        <form action="processa_cadastro.php" method="post">
+          <div class="form-group">
+            <label for="ra">RA:</label>
+            <input type="text" class="form-control" name="ra" required>
+          </div>
+    
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" class="form-control" name="nome" required>
+          </div>
+    
+          <div class="form-group">
+            <label for="problema">Problema:</label>
+            <select class="form-control" name="problema">
+              <option value="Problema 1">Wi-Fi não conecta</option>
+              <option value="Problema 2">Instalação de software</option>
+              <option value="Problema 3">Problema com autenticação</option>
+            </select>
+          </div>
+    
+          <div class="form-group">
+            <label for="descricao">Descrição do Problema:</label>
+            <textarea class="form-control" name="descricao" rows="4" required></textarea>
+          </div>
+    
+          <div class="form-group">
+            <label for="sala">Sala:</label>
+            <input type="text" class="form-control" name="sala" required>
+          </div>
+    
+          <button type="submit" class="btn btn-primary">Cadastrar Chamado</button>
+        </form>
+      </div>
+      <br>
+</body>
+</html>

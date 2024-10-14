@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta por RA</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="/help_desk/index.html">início</a></li>
+            <li><a href="cadastro_problema.html">Chamado</a></li>
+            <li><a href="/help_desk/consulta_tecnica.php">Consulta Técnica</a></li>
+            <li><a href="/help_desk/consulta_ra.html">Consulta por RA</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container mt-5">
+        <h2>Consulta por RA</h2>
+        <form action="consulta_ra_resultado.php" method="post">
+          <div class="mb-3">
+            <label for="ra" class="form-label">Digite o RA:</label>
+            <input type="text" class="form-control" name="ra" required>
+          </div>
+      
+          <button type="submit" class="btn btn-primary">Pesquisar</button>
+        </form>
+      </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(141, 202, 255); 
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+  
+  header {
+    background-color: whitesmoke;
+    padding: 10px 0;
+  }
+  
+  nav {
+    text-align: center;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  
